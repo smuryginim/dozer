@@ -1,0 +1,19 @@
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+  <mapping stop-on-errors="true">
+
+    <class-a>org.dozer.vo.LoopObjectParent</class-a>
+    <class-b>org.dozer.vo.LoopObjectParentPrime</class-b>
+    <field>
+      <a>attribute</a>
+      <b>attributePrime</b>
+    </field>
+    <field>
+      <a>child</a>
+      <b>childPrime</b>
+      <a-hint>org.dozer.vo.LoopObjectChild</a-hint>
+      <b-hint>org.dozer.vo.LoopObjectChildPrime</b-hint>
+    </field>
+  </mapping>
+</mappings>

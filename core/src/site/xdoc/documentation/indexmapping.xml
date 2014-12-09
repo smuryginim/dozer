@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Indexed Property Mapping</title>
+    <author email="fgarsombke@yahoo.com">Franz Garsombke</author>
+  </properties>
+  <head>
+    <title/>
+    <meta http-equiv="CACHE-CONTROL" name="CACHE-CONTROL" content="NO-CACHE"/>
+    <meta http-equiv="PRAGMA" name="PRAGMA" content="NO-CACHE"/>
+    <meta http-equiv="EXPIRES" content="0"/>
+  </head>
+  <body>
+    <section name="Indexed Property Mapping">
+      <p>Fields that need to be looked up or written to by indexed property are supported.</p>
+      <source>
+        <![CDATA[ 
+<mapping>
+  <class-a>org.dozer.vo.Individuals</class-a>
+  <class-b>org.dozer.vo.FlatIndividual</class-b>
+    <field>
+      <a>usernames[0]</a>
+      <b>username1</b>
+    </field>
+    <field>
+      <a>usernames[1]</a>
+      <b>username2</b>
+    </field>
+    <field>
+      <a>individual.username</a>
+      <b>username2</b>
+    </field>
+    <field>
+      <a>secondNames[1]</a>
+      <b>secondName1</b>
+    </field>
+    <field>
+      <a>secondNames[2]</a>
+      <b>secondName2</b>
+    </field>
+    <field>
+      <a>aliases.otherAliases[0]</a>
+      <b>primaryAlias</b>
+    </field>
+</mapping>
+           
+            ]]>
+      </source>
+    </section>
+  </body>
+</document>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <stop-on-errors>false</stop-on-errors>
+    <date-format>MM/dd/yyyy HH:mm</date-format><!-- default date-format will apply to all class maps unless the class mapping explicitly overrides it -->
+    <wildcard>false</wildcard><!-- default wildcard policy that will apply to all class maps unless the class mapping explicitly overrides it -->
+
+    <copy-by-references>
+      <copy-by-reference>org.dozer.vo.NoExtendBaseObjectGlobalCopyByReference</copy-by-reference>
+    </copy-by-references>
+
+  </configuration>
+
+  <mapping stop-on-errors="true">
+    <class-a>org.dozer.vo.FurtherTestObject</class-a>
+    <class-b>org.dozer.vo.Car</class-b>
+  </mapping>
+
+  <mapping wildcard="true">
+    <class-a>org.dozer.vo.SuperSuperSuperClass</class-a>
+    <class-b>org.dozer.vo.SuperSuperSuperClassPrime</class-b>
+  </mapping>
+
+  <mapping>
+    <class-a>org.dozer.vo.TestObject</class-a>
+    <class-b>org.dozer.vo.TestObjectPrime</class-b>
+
+    <field copy-by-reference="false">
+      <a>globalCopyByReference</a>
+      <b>globalCopyByReferencePrime</b>
+    </field>
+  </mapping>
+
+</mappings>

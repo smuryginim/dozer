@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Enum Mapping</title>
+    <author email="fgarsombke@yahoo.com">Franz Garsombke</author>
+  </properties>
+  <head>
+    <title/>
+    <meta http-equiv="CACHE-CONTROL" name="CACHE-CONTROL" content="NO-CACHE"/>
+    <meta http-equiv="PRAGMA" name="PRAGMA" content="NO-CACHE"/>
+    <meta http-equiv="EXPIRES" content="0"/>
+  </head>
+  <body>
+    <section name="JDK 1.5 Enum Mapping">
+      <p>To map an enums value to another enum is shown below.</p>
+      <source>
+        <![CDATA[ 
+<field>
+  <a>status</a>
+  <b>statusPrime</b>
+</field>
+            ]]>
+      </source>
+      <p>
+        <source>
+          <![CDATA[ 
+enum Status {
+  PROCESSING, SUCCESS, ERROR
+}
+
+public class UserGroup {
+
+  private Status status;
+  
+  public Status getStatus() {
+    return status;
+  }
+
+  public void setStatus(Status status) {
+    this.status = status;
+  }
+
+}
+
+enum StatusPrime {
+  PROCESSING, SUCCESS, ERROR  
+}
+
+public class UserGroupPrime {
+
+  private StatusPrime statusPrime;
+  
+  public StatusPrime getStatusPrime() {
+    return statusPrime;
+  }
+
+  public void setStatusPrime(StatusPrime statusPrime) {
+    this.statusPrime = statusPrime;
+  }
+
+}
+
+            ]]>
+        </source>
+      </p>
+
+    </section>
+  </body>
+</document>

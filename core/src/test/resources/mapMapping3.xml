@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping>
+    <class-a>org.dozer.vo.map.SimpleObj</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+  </mapping>
+
+  <mapping>
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.NestedObjPrime</class-b>
+    <field-exclude>
+      <a>field1</a>
+      <b>field1</b>
+    </field-exclude>
+  </mapping>
+
+  <mapping>
+    <class-a>org.dozer.vo.map.CustomMap</class-a>
+    <class-b>org.dozer.vo.SimpleObj</class-b>
+    <field>
+      <a map-get-method="getValue" map-set-method="putValue" key="fieldA" date-format="MM/dd/yyyy">this</a>
+      <b>field5</b>
+      <a-hint>java.lang.String</a-hint>
+    </field>
+  </mapping>
+
+</mappings>

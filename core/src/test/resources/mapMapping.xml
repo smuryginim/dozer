@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping map-id="caseA">
+    <class-a>org.dozer.vo.map.SimpleObj</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+    <field map-id="caseB">
+      <a>nested2</a>
+      <b>nested2</b>
+    </field>
+
+  </mapping>
+
+  <mapping map-id="caseA2">
+    <class-a>org.dozer.vo.map.SimpleObj</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+    <field map-id="caseC">
+      <a>nested2</a>
+      <b>nested2</b>
+    </field>
+
+  </mapping>
+
+
+
+  <mapping map-id="caseB">
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.NestedObjPrime</class-b>
+  </mapping>
+
+  <mapping map-id="caseC">
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.NestedObjPrime</class-b>
+    <field-exclude>
+      <a>field1</a>
+      <b>field1</b>
+    </field-exclude>
+  </mapping>
+
+</mappings>

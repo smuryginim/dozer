@@ -1,0 +1,34 @@
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping wildcard="true">
+    <class-a>org.dozer.vo.recursive.ClassA</class-a>
+    <class-b>org.dozer.vo.recursive.ClassAPrime</class-b>
+    <field>
+      <a>subs</a>
+      <b>subs</b>
+      <a-hint>org.dozer.vo.recursive.ClassB</a-hint>
+      <b-hint>org.dozer.vo.recursive.ClassBPrime</b-hint>
+    </field>
+  </mapping>
+
+  <mapping wildcard="true">
+    <class-a>org.dozer.vo.recursive.ClassAA</class-a>
+    <class-b>org.dozer.vo.recursive.ClassAAPrime</class-b>
+  </mapping>
+  <mapping wildcard="false" map-id="minimal">
+    <class-a>org.dozer.vo.recursive.ClassA</class-a>
+    <class-b>org.dozer.vo.recursive.ClassAPrime</class-b>
+    <field>
+      <a>nom</a>
+      <b>nom</b>
+    </field>
+    <field map-id="minimal">
+      <a>subs</a>
+      <b>subs</b>
+      <a-hint>org.dozer.vo.recursive.ClassB</a-hint>
+      <b-hint>org.dozer.vo.recursive.ClassBPrime</b-hint>
+    </field>
+  </mapping>
+</mappings>

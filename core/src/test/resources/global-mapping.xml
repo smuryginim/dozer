@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <copy-by-references>
+      <copy-by-reference>org.dozer.*.Reference</copy-by-reference>
+    </copy-by-references>
+  </configuration>
+  <mapping>
+    <class-a>org.dozer.vo.copybyreference.TestA</class-a>
+    <class-b>org.dozer.vo.copybyreference.TestB</class-b>
+    <field>
+      <a>oneA</a>
+      <b>oneB</b>
+    </field>
+  </mapping>
+
+
+</mappings>

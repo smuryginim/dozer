@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <copy-by-references>
+      <copy-by-reference>org.dozer.vo.B</copy-by-reference>
+    </copy-by-references>
+  </configuration>
+
+  <mapping>
+    <class-a>java.util.Map</class-a>
+    <class-b>org.dozer.vo.ValueObject</class-b>
+    <field>
+      <a key="1">this</a>
+      <b>value</b>
+    </field>    
+  </mapping>
+
+</mappings>

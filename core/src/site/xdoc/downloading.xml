@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://maven.apache.org/XDOC/2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/XDOC/2.0 http://maven.apache.org/xsd/xdoc-2.0.xsd">
+  <properties>
+    <title>Downloading</title>
+    <author email="fgarsombke@yahoo.com">Franz Garsombke</author>
+  </properties>
+  <head>
+    <title/>
+    <meta http-equiv="CACHE-CONTROL" name="CACHE-CONTROL" content="NO-CACHE"/>
+    <meta http-equiv="PRAGMA" name="PRAGMA" content="NO-CACHE"/>
+    <meta http-equiv="EXPIRES" content="0"/>
+  </head>
+  <body>
+    <section name="Downloading Dozer">
+      <ul>
+        <li>
+          <a href="https://github.com/DozerMapper/dozer/downloads" target="_blank">
+            Latest release of Dozer Mapper
+          </a>
+        </li>
+        <li>
+          <a href="http://sourceforge.net/project/showfiles.php?group_id=133517&amp;package_id=146610"
+             target="_blank">
+            Older Releases hosted on SourceForge
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</document>

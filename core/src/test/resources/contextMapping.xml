@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping map-id="caseA">
+    <class-a>org.dozer.vo.context.ContextMapping</class-a>
+    <class-b>org.dozer.vo.context.ContextMappingPrime</class-b>
+    <field-exclude>
+      <a>loanNo</a>
+      <b>loanNo</b>
+    </field-exclude>
+    <field map-id="caseC">
+      <a>contextList</a>
+      <b>contextList</b>
+      <a-hint>org.dozer.vo.context.ContextMappingNested</a-hint>
+      <b-hint>org.dozer.vo.context.ContextMappingNestedPrime</b-hint>
+    </field>
+  </mapping>
+
+  <mapping map-id="caseB">
+    <class-a>org.dozer.vo.context.ContextMapping</class-a>
+    <class-b>org.dozer.vo.context.ContextMappingPrime</class-b>
+  </mapping>
+
+  <mapping map-id="caseC">
+    <class-a>org.dozer.vo.context.ContextMappingNested</class-a>
+    <class-b>org.dozer.vo.context.ContextMappingNestedPrime</class-b>
+    <field-exclude>
+      <a>loanNo</a>
+      <b>loanNo</b>
+    </field-exclude>
+  </mapping>
+
+  <mapping map-id="caseD">
+    <class-a>org.dozer.vo.context.ContextMappingNested</class-a>
+    <class-b>org.dozer.vo.context.ContextMappingNestedPrime</class-b>
+  </mapping>
+
+
+</mappings>

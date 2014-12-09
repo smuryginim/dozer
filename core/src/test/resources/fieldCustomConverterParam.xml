@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <custom-converters>
+      <converter type="org.dozer.functional_tests.support.CustomConverterParamConverter">
+        <class-a>java.lang.String</class-a>
+        <class-b>java.lang.String</class-b>
+      </converter>
+    </custom-converters>
+  </configuration>
+
+  <mapping wildcard="false">
+    <class-a>org.dozer.vo.SimpleObj</class-a>
+    <class-b>org.dozer.vo.AnotherTestObject</class-b>
+    <field custom-converter="org.dozer.functional_tests.support.CustomConverterParamConverter" custom-converter-param="CustomConverterParamTest">
+      <a>field1</a>
+      <b>field3</b>
+    </field>
+  </mapping>
+
+  <mapping map-id="1">
+    <class-a>org.dozer.vo.Individual</class-a>
+    <class-b>org.dozer.vo.Fruit</class-b>
+    <field>
+      <a>username</a>
+      <b>name</b>
+    </field>
+  </mapping>
+
+  <mapping map-id="2">
+    <class-a>org.dozer.vo.Individual</class-a>
+    <class-b>org.dozer.vo.Fruit</class-b>
+    <field custom-converter-param="PARAM">
+      <a>username</a>
+      <b>name</b>
+    </field>
+  </mapping>
+
+
+</mappings>

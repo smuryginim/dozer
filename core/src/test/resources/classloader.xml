@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <custom-converters>
+      <converter type="org.dozer.functional_tests.support.StringAppendCustomConverter">
+        <class-a>[Lorg.dozer.vo.map.SimpleObj;</class-a>
+        <class-b>java.lang.String</class-b>
+      </converter>
+    </custom-converters>
+  </configuration>
+
+  <mapping>
+    <class-a></class-a>
+  </mapping>
+
+</mappings>

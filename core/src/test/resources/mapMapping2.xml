@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping map-id="caseA">
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+  </mapping>
+
+  <mapping map-id="caseB">
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+    <field-exclude>
+      <a>field1</a>
+      <b>field1</b>
+    </field-exclude>
+  </mapping>
+
+  <!-- key 'first' in HashMap will be mapped to SimpleObjPrime.field1 property -->
+  <mapping map-id="caseC">
+    <class-a>java.util.HashMap</class-a>
+    <class-b>org.dozer.vo.map.SimpleObjPrime</class-b>
+    <field>
+    	<a>first</a>
+    	<b>field1</b>
+    </field>
+  </mapping>
+
+  <!-- same as case C, but reversed (should have no effect on usage) -->
+  <mapping map-id="caseD">
+    <class-a>org.dozer.vo.map.SimpleObjPrime</class-a>
+    <class-b>java.util.HashMap</class-b>
+    <field>
+    	<a>field1</a>
+    	<b>first</b>
+    </field>
+  </mapping>
+
+</mappings>

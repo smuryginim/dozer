@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <trim-strings>true</trim-strings>
+  </configuration>
+
+  <mapping>
+    <class-a>org.dozer.vo.AnotherTestObject</class-a>
+    <class-b>org.dozer.vo.AnotherTestObjectPrime</class-b>
+    <field>
+      <a>field4</a>
+      <b>to.one</b>
+    </field>
+  </mapping>
+
+  <mapping trim-strings="false">
+    <class-a>org.dozer.vo.TestObject</class-a>
+    <class-b>org.dozer.vo.TestObjectPrime</class-b>
+    <field>
+      <a>one</a>
+      <b>onePrime</b>
+    </field>
+  </mapping>
+
+</mappings>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping>
+    <class-a>org.dozer.vo.PrimitiveArrayObj</class-a>
+    <class-b>org.dozer.vo.PrimitiveArrayObjPrime</class-b>
+    <field>
+      <a>field1</a>
+      <b>field1</b>
+    </field>
+  </mapping>
+
+  <mapping map-id="primitiveToArrayUsingHint">
+    <class-a>org.dozer.vo.PrimitiveArrayObj</class-a>
+    <class-b>org.dozer.vo.PrimitiveArrayObjPrime</class-b>
+    <field>
+      <a>field1</a>
+      <b>field1</b>
+      <b-hint>java.lang.String</b-hint>
+    </field>
+  </mapping>
+
+</mappings>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping>
+    <class-a>org.dozer.vo.deepindex.customconverter.First</class-a>
+    <class-b>org.dozer.vo.deepindex.customconverter.Last</class-b>
+    <field custom-converter="org.dozer.vo.deepindex.customconverter.Conv">
+      <!-- <a>second.thirdArray[7]</a> -->
+      <!-- <a>secondArray[0].third</a> -->
+      <a>secondArray[0].thirdArray[7]</a>
+      <b>third</b>
+    </field>
+  </mapping>
+</mappings>

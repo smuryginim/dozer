@@ -1,0 +1,16 @@
+Index: core/src/main/java/org/dozer/MappingProcessor.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- core/src/main/java/org/dozer/MappingProcessor.java	(revision )
++++ core/src/main/java/org/dozer/MappingProcessor.java	(revision )
+@@ -179,7 +179,7 @@
+       }
+ 
+       // If this is a nested MapperAware conversion this mapping can be already processed
+-      Object alreadyMappedValue = mappedFields.getMappedValue(srcObj, destClass);
++      Object alreadyMappedValue = mappedFields.getMappedValue(srcObj, destType);
+       if (alreadyMappedValue != null) {
+         return (T) alreadyMappedValue;
+       }

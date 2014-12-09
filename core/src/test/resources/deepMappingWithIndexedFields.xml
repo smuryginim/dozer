@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <mapping>
+    <class-a>org.dozer.vo.deep.SrcDeepObj</class-a>
+    <class-b>org.dozer.vo.deep.DestDeepObj</class-b>
+    <field>
+      <a>srcNestedObj.srcNestedObj2.simpleObjects[0].field1</a>
+      <b>dest2</b>
+    </field>
+    <field>
+      <a>someList[1].equalNamedList[0].field3</a>
+      <b>dest5</b>
+      <a-deep-index-hint>
+        org.dozer.vo.TestObject, org.dozer.vo.AnotherTestObject
+      </a-deep-index-hint>
+    </field>
+    <field>
+      <a>someList[1].equalNamedList[0].field4</a>
+      <b>hintList[0].twoPrime</b>
+      <a-deep-index-hint>
+        org.dozer.vo.TestObject, org.dozer.vo.AnotherTestObject
+      </a-deep-index-hint>
+      <b-deep-index-hint>org.dozer.vo.TestObjectPrime</b-deep-index-hint>
+    </field>
+  </mapping>
+
+  <mapping>
+    <class-a>org.dozer.vo.deepindex.HeadOfHouseHold</class-a>
+    <class-b>org.dozer.vo.deepindex.Family</class-b>
+    <field>
+      <a>firstName</a>
+      <b>familyMembers[0].firstName</b>
+      <b-deep-index-hint>org.dozer.vo.deepindex.PersonalDetails</b-deep-index-hint>
+    </field>
+    <field>
+      <a>lastName</a>
+      <b>familyMembers[0].lastName</b>
+      <b-deep-index-hint>org.dozer.vo.deepindex.PersonalDetails</b-deep-index-hint>
+    </field>
+    <field>
+      <a>salary</a>
+      <b>familyMembers[0].salary</b>
+      <b-deep-index-hint>org.dozer.vo.deepindex.PersonalDetails</b-deep-index-hint>
+    </field>
+
+    <field>
+      <a>petName</a>
+      <b>pets[1].petName</b>
+    </field>
+    <field>
+      <a>petAge</a>
+      <b>pets[1].petAge</b>
+    </field>
+    <field>
+      <a>offSpringName</a>
+      <b>pets[1].offSpring[2].petName</b>
+    </field>
+  </mapping>
+
+  <mapping>
+    <class-a>org.dozer.vo.deepindex.A</class-a>
+    <class-b>org.dozer.vo.deepindex.B</class-b>
+      <field> 
+        <a>id1</a> 
+        <b>foo[0].id</b> 
+      </field> 
+      <field> 
+        <a>id2</a> 
+        <b>foo[1].id</b> 
+      </field>
+  </mapping>          
+
+</mappings>

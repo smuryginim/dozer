@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+  <configuration>
+    <custom-converters>
+      <converter type="org.dozer.vo.CToStringConverter">
+        <class-a>org.dozer.vo.C</class-a>
+        <class-b>java.lang.String</class-b>
+      </converter>
+    </custom-converters>
+  </configuration>
+  <mapping wildcard="true">
+    <class-a>org.dozer.vo.Individuals</class-a>
+    <class-b>org.dozer.vo.FlatIndividual</class-b>
+    <field>
+      <a>usernames[0]</a>
+      <b>username1</b>
+    </field>
+    <field>
+      <a>usernames[1]</a>
+      <b>username2</b>
+    </field>
+    <field>
+      <a>individual.username</a>
+      <b>username2</b>
+    </field>
+    <field>
+      <a>secondNames[1]</a>
+      <b>secondName1</b>
+    </field>
+    <field>
+      <a>secondNames[2]</a>
+      <b>secondName2</b>
+    </field>
+    <field>
+      <a>aliases.otherAliases[0]</a>
+      <b>primaryAlias</b>
+    </field>
+    <field>
+      <a>addressSet[0]</a>
+      <b>address</b>
+    </field>
+    <field>
+      <a is-accessible="true">thirdNames[0]</a>
+      <b>thirdName</b>
+    </field>
+
+  </mapping>
+
+  <mapping wildcard="false">
+    <class-a>org.dozer.vo.A</class-a>
+    <class-b>org.dozer.vo.D</class-b>
+
+    <field>
+      <a>b.cs[0]</a>
+      <b>value</b>
+      <a-hint>org.dozer.vo.C</a-hint>
+      <b-hint>java.lang.String</b-hint>
+    </field>
+  </mapping>
+</mappings>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project name="Dozer">
+	<skin>
+		<groupId>org.apache.maven.skins</groupId>
+		<artifactId>maven-fluido-skin</artifactId>
+		<version>1.3.0</version>
+	</skin>
+	<custom>
+		<fluidoSkin>
+			<topBarEnabled>false</topBarEnabled>
+			<sideBarEnabled>true</sideBarEnabled>
+      <gitHub>
+        <projectId>DozerMapper/dozer</projectId>
+        <ribbonOrientation>left</ribbonOrientation>
+        <ribbonColor>orange</ribbonColor>
+      </gitHub>
+			<googleSearch />
+			<googlePlusOne />
+			<facebookLike />
+		</fluidoSkin>
+	</custom>
+  <!-- Page Title -->
+  <bannerLeft>
+    <name>Dozer</name>
+    <src>http://sflogo.sourceforge.net/sflogo.php?group_id=133517&amp;type=2</src>
+    <href>http://www.sourceforge.net</href>
+  </bannerLeft>
+  <bannerRight>
+    <src>images/dozer.png</src>
+  </bannerRight>
+  <body>
+
+    <!-- Links defined across the top right of the site -->
+    <links>
+      <item name="Maven" href="http://maven.apache.org/" />
+    </links>
+
+    <!-- Menu in the Left Navigation -->
+    <menu name="About Dozer">
+      <!-- Standalone item -->
+      <item name="About" href="/documentation/about.html" />
+      <item name="News" href="/index.html" />
+      <item name="Downloading" href="/downloading.html" />
+      <item name="License" href="/license.html" />
+    </menu>
+
+	<!-- Menu for the Eclipse plugin -->
+    <menu name="Eclipse Plugin">
+    	<item name="Installation" href="/documentation/eclipse-plugin/installation.html" />
+    	<item name="Usage" href="/documentation/eclipse-plugin/usage.html" collapse="true">
+			<item name="Mapping via Editor" href="/documentation/eclipse-plugin/usage-editor.html" />
+			<item name="Mapping via XML" href="/documentation/eclipse-plugin/usage-xml.html" />
+		</item>
+    </menu>
+
+    <menu name="User's Guide">
+      <!-- Standalone item -->
+      <item name="Why Map?" href="/documentation/whymap.html" />
+      <item name="Getting Started" href="/documentation/gettingstarted.html" />
+      <item name="Usage" href="/documentation/usage.html" collapse="true"/>
+      <item name="Mappings via Annotations" href="/documentation/annotations.html"/>
+      <item name="Mappings via API" href="/documentation/apimappings.html"/>
+      <!-- Collapsed Submenu -->
+      <item name="Mappings via XML" href="/documentation/mappings.html" collapse="true">
+        <item name="Mapping Two Classes" href="/documentation/mappingclasses.html" />
+        <item name="Basic Property Mapping" href="/documentation/simpleproperty.html" />
+        <item name="String To Date Mapping" href="/documentation/stringtodatemapping.html" />
+        <item name="Enum Mapping" href="/documentation/enum.html" />
+        <item name="Collection Mapping" href="/documentation/collectionandarraymapping.html" />
+        <item name="Map Backed Properties" href="/documentation/mapbackedproperty.html" />
+        <item name="Index Mapping" href="/documentation/indexmapping.html" />
+        <item name="Deep Mapping" href="/documentation/deepmapping.html" />
+        <item name="Excluding Fields" href="/documentation/exclude.html" />
+        <item name="One-Way Mapping" href="/documentation/oneway.html" />
+        <item name="Context Based Mapping" href="/documentation/contextmapping.html" />
+        <item name="Global Configuration" href="/documentation/globalConfiguration.html" />
+        <item name="Custom Converters" href="/documentation/customconverter.html" />
+        <item name="Custom Bean Factories" href="/documentation/custombeanfactories.html" />
+        <item name="Custom Create Methods" href="/documentation/customCreateMethod.html" />
+        <item name="Custom Get/Set Methods" href="/documentation/custommethods.html" />
+        <item name="Copy By Ref Mapping" href="/documentation/copybyreference.html" />
+        <item name="Inheritance Mapping" href="/documentation/baseattributes.html" />
+        <item name="Dozer Events" href="/documentation/events.html" />
+        <item name="Expression Language" href="documentation/expressionlanguage.html" />
+      </item>
+      <item name="Configuration" href="/documentation/configuration/configuration.html" collapse="true">
+        <item name="Logging" href="/documentation/configuration/logging.html" />
+        <item name="Proxy Handling" href="documentation/proxyhandling.html" />
+      </item>
+      <item name="Statistics" href="/documentation/configuration/statistics.html" />
+      <item name="JMX Integration" href="/documentation/jmxintegration.html" />
+      <item name="Spring Integration" href="/documentation/springintegration.html"/>
+      <item name="JAXB and XMLBeans" href="/documentation/xmlbeans.html" />
+      <item name="Metadata Query Interface" href="/documentation/metadata.html" />
+      <item name="FAQ" href="/documentation/faq.html" />
+      <item name="Dozer Mapping XSD" href="/schema/beanmapping.xsd" />
+      <item name="User's Guide PDF" href="/dozer-user-guide.pdf" />
+    </menu>
+
+    <menu name="Community">
+      <item name="Articles" href="/documentation/articles.html"/>
+      <item name="Support" href="/documentation/support.html" collapse="true">
+        <item name="Support Forum" href="https://groups.google.com/forum/?fromgroups#!forum/dozer-mapper" />
+        <item name="Issue Tracker" href="https://github.com/DozerMapper/dozer/issues" />
+      </item>
+    </menu>
+
+    <menu name="Release Notes">
+      <!-- Standalone item -->
+      <item name="Release Notes" href="/releasenotes.html" />
+      <item name="Unit Test Reports" href="surefire-report.html" />
+    </menu>
+    
+    <menu ref="reports" />
+
+  </body>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://dozer.sourceforge.net http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+    <mapping map-id="null" wildcard="false">
+        <class-a>java.util.HashMap</class-a>
+        <class-b>org.dozer.vo.A</class-b>
+        <field>
+            <a key="key">this</a>
+            <b>b</b>
+        </field>
+    </mapping>
+
+  <mapping map-id="not-null" map-null="false" wildcard="false">
+      <class-a>java.util.HashMap</class-a>
+      <class-b>org.dozer.vo.A</class-b>
+      <field>
+          <a key="key">this</a>
+          <b>b</b>
+      </field>
+  </mapping>
+
+  <mapping map-id="null-set" wildcard="false">
+      <class-a>org.dozer.vo.set.NamesArray</class-a>
+      <class-b>org.dozer.vo.set.NamesSet</class-b>
+      <field>
+          <a>names</a>
+          <b>names</b>
+          <b-hint>java.util.HashSet</b-hint>
+      </field>
+  </mapping>
+
+  <mapping map-id="null-list" wildcard="false">
+      <class-a>org.dozer.vo.set.NamesArray</class-a>
+      <class-b>org.dozer.vo.set.NamesList</class-b>
+      <field>
+          <a>names</a>
+          <b>names</b>
+          <b-hint>java.util.LinkedList</b-hint>
+      </field>
+  </mapping>
+
+</mappings>
